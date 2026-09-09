@@ -35,78 +35,78 @@ const songs = [
     {
         title: "Boba Tunnel",
         artist: "Anupam Roy",
-        audio: "Assets/Music/Bobatunel.mp3",
-        image: "Assets/Images/Boba-tunnel.jpg"
+        audio: "assets/Music/Bobatunel.mp3",
+        image: "assets/Images/Boba-tunnel.jpg"
     },
 
     {
         title: "Brooklyn Baby",
         artist: "Lana Del Rey",
-        audio: "Assets/Music/Brooklyn_Baby.mp3",
-        image: "Assets/Images/Brooklyn Baby.jpg"
+        audio: "assets/Music/Brooklyn_Baby.mp3",
+        image: "assets/Images/Brooklyn Baby.jpg"
     },
 
     {
         title: "Bulleya",
         artist: "Papon",
-        audio: "Assets/Music/Bulleya.mp3",
-        image: "Assets/Images/bulleya.jpg"
+        audio: "assets/Music/Bulleya.mp3",
+        image: "assets/Images/bulleya.jpg"
     },
 
     {
         title: "Ekhon Onek Raat",
         artist: "Anupam Roy",
-        audio: "Assets/Music/Ekhon_Onek_Raat.mp3",
-        image: "Assets/Images/Ekhon-onek-rat.jpg"
+        audio: "assets/Music/Ekhon_Onek_Raat.mp3",
+        image: "assets/Images/Ekhon-onek-rat.jpg"
     },
 
     {
         title: "Hridoyer Rong",
         artist: "Lagnajita Chakraborty",
-        audio: "Assets/Music/Hridoyer Rang.mp3",
+        audio: "assets/Music/Hridoyer Rang.mp3",
         image: "Assets/Images/hridoyer ronng.jpg"
     },
 
     {
         title: "In Dino",
         artist: "Soham and Pritam Chakraborty",
-        audio: "Assets/Music/In Dino.mp3",
-        image: "Assets/Images/in-dino.jpg"
+        audio: "assets/Music/In Dino.mp3",
+        image: "assets/Images/in-dino.jpg"
     },
 
     {
         title: "Jogi",
         artist: "Yasser Desai and Aakanksha Sharma",
-        audio: "Assets/Music/jogi.mp3",
-        image: "Assets/Images/jogi.jpg"
+        audio: "assets/Music/jogi.mp3",
+        image: "assets/Images/jogi.jpg"
     },
 
     {
         title: "Mitwa",
         artist: "Shafqat Amanat Ali, Shankar Mahadevan, and Caralisa Monteiro",
-        audio: "Assets/Music/mitwa.mp3",
-        image: "Assets/Images/mitwa.jpg"
+        audio: "assets/Music/mitwa.mp3",
+        image: "assets/Images/mitwa.jpg"
     },
 
     {
         title: "Perfect",
         artist: "Ed Sheeran",
-        audio: "Assets/Music/perfect.mp3",
-        image: "Assets/Images/perfect.jpg"
+        audio: "assets/Music/perfect.mp3",
+        image: "assets/Images/perfect.jpg"
     },
 
     {
         title: "Tum Tak",
         artist: "A R Rahaman",
-        audio: "Assets/Music/tumtak.mp3",
-        image: "Assets/Images/tum-tak.jpg"
+        audio: "assets/Music/tumtak.mp3",
+        image: "assets/Images/tum-tak.jpg"
     },
 
     {
         title: "White Mustang",
         artist: "Lana Del Rey",
-        audio: "Assets/Music/whitemustang.mp3",
-        image: "Assets/Images/white mustang.jpg"
+        audio: "assets/Music/whitemustang.mp3",
+        image: "assets/Images/white mustang.jpg"
     }
 
 ];
@@ -576,35 +576,35 @@ function searchMusic() {
 const artists = [
     {
         name: "Anupam Roy",
-        image: "Assets/Images/anupam-roy.jpg"
+        image: "assets/Images/anupam-roy.jpg"
     },
     {
         name: "Lana Del Rey",
-        image: "Assets/Images/lana-del-rey.jpg"
+        image: "assets/Images/lana-del-rey.jpg"
     },
     {
         name: "Papon",
-        image: "Assets/Images/papon.jpg"
+        image: "assets/Images/papon.jpg"
     },
     {
         name: "Lagnajita Chakraborty",
-        image: "Assets/Images/lagnajita.jpg"
+        image: "assets/Images/lagnajita.jpg"
     },
     {
         name: "Pritam Chakraborty",
-        image: "Assets/Images/pritam.jpg"
+        image: "assets/Images/pritam.jpg"
     },
     {
         name: "Ed Sheeran",
-        image: "Assets/Images/ed-sheeran.jpg"
+        image: "assets/Images/ed-sheeran.jpg"
     },
     {
         name: "A. R. Rahman",
-        image: "Assets/Images/ar-rahman.jpg"
+        image: "assets/Images/ar-rahman.jpg"
     },
     {
         name: "Yasser Desai",
-        image: "Assets/Images/yasser-desai.jpg"
+        image: "assets/Images/yasser-desai.jpg"
     }
 ];
 // ======================================

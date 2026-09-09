@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VYBE</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+<!-- =====================================================
+     SIGN IN MODAL
+===================================================== -->
+
+<div class="login-overlay" id="login-overlay">
+
+    <div class="login-modal">
+
+        <button class="close-login" id="close-login">
+            &times;
+        </button>
+
+        <div class="login-header">
+            <div class="login-logo">♫</div>
+
+            <h2>Welcome to VYBE</h2>
+
+            <p>Sign in to continue listening.</p>
+        </div>
+
+
+        <form id="login-form">
+
+            <div class="input-group">
+
+                <label for="login-email">
+                    Email
+                </label>
+
+                <input type="email" id="login-email" placeholder="Enter your email" required>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="login-password">
+                    Password
+                </label>
+
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+
+            </div>
+
+
+            <button type="submit" class="login-submit">
+                Sign In
+            </button>
+
+        </form>
+
+
+        <p class="login-footer">
+            Don't have an account?
+            <button type="button" id="signup-button">
+                Sign Up
+            </button>
+        </p>
+
+    </div>
+
+</div>
+
+<body>
+
+    <div class="app">
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <span>〽️</span>
+                VYBE
+            </div>
+
+            <nav class="menu">
+
+                <a href="#" class="active">
+                    <i class="fa fa-home"></i>
+                    <span>Home</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa fa-music"></i>
+                    <span>Playlists</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa fa-bell"></i>
+                    <span>Notifications</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa fa-star"></i>
+                    <span>Premium Content</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- =========================
+             MAIN CONTENT AREA
+        ========================== -->
+
+        <div class="content-area">
+
+            <main class="main-content">
+                <!-- ================================
+            SIGN IN BUTTON
+            ================================= -->
+
+                <div class="top-bar">
+
+                    <button class="sign-in-button" id="sign-in-button">
+                        Sign In
+                    </button>
+
+                </div>
+
+                <!-- =========================
+                     WELCOME SECTION
+                ========================== -->
+
+                <section class="welcome-section">
+
+                    <h1>Welcome to VYBE</h1>
+
+                    <p class="subtitle">
+                        Find your sound. Feel your VYBE.
+                    </p>
+
+                </section>
+                <!-- SEARCH BAR -->
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="What do you want to play?">
+                    <button id="search-button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+
+
+                <!-- =========================
+                     MUSIC SECTION
+                ========================== -->
+
+                <section class="music-section">
+
+                    <h2>Made For Your VYBE</h2>
+                    <div class="album-wrapper">
+
+                        <button class="scroll-btn left-btn" id="left-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+
+                        <div class="album-container">
+                            <!-- ALBUM 1 -->
+                            <div class="album-card" data-song="0">
+
+                                <div class="album-image">
+                                    <img src="Assets/Images/Boba-tunnel.jpg" alt="Boba-tunnel">
+
+                                    <button class="card-play" aria-label="Play Midnight Drive">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+
+                                <h3>Boba Tunnel</h3>
+                                <p>Anupam Roy</p>
+
+                            </div>
+
+
+                            <!-- ALBUM 2 -->
+                            <div class="album-card" data-song="1">
+
+                                <div class="album-image">
+                                    <img src="Assets/Images/Brooklyn Baby.jpg" alt="Brooklyn Baby">
+
+                                    <button class="card-play" aria-label="Play Perfect">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+
+                                <h3>Brooklyn Baby</h3>
+                                <p>Lana Del Rey</p>
+
+                            </div>
+
+
+                            <!-- ALBUM 3 -->
+                            <div class="album-card" data-song="2">
+
+                                <div class="album-image">
+                                    <img src="Assets/Images/bulleya.jpg" alt="Bulleya">
+
+                                    <button class="card-play" aria-label="Play After Hours">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+
+                                <h3>Bulleya</h3>
+                                <p>Papon</p>
+
+                            </div>
+
+
+                            <!-- ALBUM 4 -->
+                            <div class="album-card" data-song="3">
+
+                                <div class="album-image">
+                                    <img src="Assets/Images/Ekhon-onek-rat.jpg" alt="Ekhon Onek Raat">
+
+                                    <button class="card-play" aria-label="Play Lost In Tokyo">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+
+                                <h3>Ekhon Onek Raat</h3>
+                                <p>Anupam Roy</p>
+
+                            </div>
+                            <div class="album-card" data-song="4">
+
+                                <div class="album-image">
+                                    <img src="Assets/Images/hridoyer ronng.jpg" alt="Hridoyer Rong">
+                                    <button class="card-play" aria-label="Play Lost In Tokyo">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+
+                                <h3>Hridoyer Rong</h3>
+                                <p>Lagnajita Chakraborty</p>
+
+                            </div>
+                            <div class="album-card" data-song="5">
+
+                                <div class="album-image">
+                                    <img src="Assets/Images/in-dino.jpg" alt="in-dino">
+
+                                    <button class="card-play" aria-label="Play Lost In Tokyo">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+
+                                <h3>In Dino</h3>
+                                <p>Soham and Pritam Chakraborty</p>
+
+                            </div>
+                            <div class="album-card" data-song="6">
+
+                                <div class="album-image">
+                                    <img src="Assets/Images/jogi.jpg" alt="Jogi">
+
+                                    <button class="card-play" aria-label="Play Lost In Tokyo">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+
+                                <h3>Jogi</h3>
+                                <p>Yasser Desai and Aakanksha Sharma</p>
+
+                            </div>
+                            <div class="album-card" data-song="7">
+
+                                <div class="album-image">
+                                    <img src="Assets/Images/mitwa.jpg" alt="Mitwa">
+
+                                    <button class="card-play" aria-label="Play Lost In Tokyo">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+
+                                <h3>Mitwa</h3>
+                                <p>Shafqat Amanat Ali, Shankar Mahadevan, and Caralisa Monteiro</p>
+
+                            </div>
+                            <div class="album-card" data-song="8">
+
+                                <div class="album-image">
+                                    <img src="Assets/Images/perfect.jpg" alt="Perfect">
+
+                                    <button class="card-play" aria-label="Play Lost In Tokyo">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+
+                                <h3>Perfect</h3>
+                                <p>Ed Sheran</p>
+
+                            </div>
+                            <div class="album-card" data-song="9">
+
+                                <div class="album-image">
+                                    <img src="Assets/Images/tum-tak.jpg" alt="Tum Tak">
+
+                                    <button class="card-play" aria-label="Play Lost In Tokyo">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                                <h3>Tum Tak</h3>
+                                <p>A R Rahaman</p>
+                            </div>
+                            <div class="album-card" data-song="10">
+
+                                <div class="album-image">
+                                    <img src="Assets/Images/white mustang.jpg" alt="White Mustang">
+
+                                    <button class="card-play" aria-label="Play Lost In Tokyo">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                                <h3>white Mustang</h3>
+                                <p>Lana Del Rey</p>
+                            </div>
+                        </div>
+                        <button class="scroll-btn right-btn" id="right-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+
+                    </div>
+
+                </section>
+                <!-- ======================================
+     POPULAR ARTISTS
+====================================== -->
+
+                <section class="artists-section">
+
+                    <h2>Popular artists</h2>
+
+                    <div class="artist-slider">
+
+                        <!-- LEFT ARROW -->
+                        <button id="artist-left-btn" class="artist-arrow">
+                            ❮
+                        </button>
+
+                        <!-- ARTIST CARDS -->
+                        <div class="artist-container">
+
+                        </div>
+
+                        <!-- RIGHT ARROW -->
+                        <button id="artist-right-btn" class="artist-arrow">
+                            ❯
+                        </button>
+
+                    </div>
+
+                </section>
+                <!-- =====================================================
+     VYBE FOOTER
+===================================================== -->
+
+                <footer class="vybe-footer">
+
+                    <div class="footer-content">
+
+                        <!-- BRAND -->
+                        <div class="footer-brand">
+
+                            <div class="footer-logo">
+                                ♫ <span>VYBE</span>
+                            </div>
+
+                            <p>
+                                Your music. Your mood. Your VYBE.
+                            </p>
+
+                        </div>
+
+
+                        <!-- COMPANY -->
+                        <div class="footer-column">
+
+                            <h4>Company</h4>
+
+                            <a href="#">About</a>
+                            <a href="#">Careers</a>
+                            <a href="#">For Artists</a>
+
+                        </div>
+
+
+                        <!-- SUPPORT -->
+                        <div class="footer-column">
+
+                            <h4>Support</h4>
+
+                            <a href="#">Help</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Privacy</a>
+
+                        </div>
+
+
+                        <!-- SOCIAL -->
+                        <div class="footer-social">
+
+                            <h4>Follow VYBE</h4>
+
+                            <div class="social-links">
+
+                                <a href="#" aria-label="Instagram">
+                                    Instagram
+                                </a>
+
+                                <a href="#" aria-label="Facebook">
+                                    Facebook
+                                </a>
+
+                                <a href="#" aria-label="YouTube">
+                                    YouTube
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FOOTER BOTTOM -->
+
+                    <div class="footer-bottom">
+
+                        <p>
+                            © 2026 VYBE. All rights reserved.
+                        </p>
+
+                        <div class="footer-bottom-links">
+
+                            <a href="#">Privacy</a>
+
+                            <a href="#">Terms</a>
+
+                            <a href="#">Cookies</a>
+
+                        </div>
+
+                    </div>
+
+                </footer>
+
+            </main>
+
+
+            <!-- =========================
+                 AUDIO ELEMENT
+            ========================== -->
+
+            <audio id="audio-player"></audio>
+
+
+            <!-- =========================
+                 MUSIC PLAYER
+            ========================== -->
+
+            <div class="player">
+
+
+                <!-- SONG INFORMATION -->
+
+                <div class="song-info">
+
+                    <div id="song-image" class="song-image"></div>
+
+                    <div class="song-details">
+
+                        <h4 id="song-title">
+                            Midnight Drive
+                        </h4>
+
+                        <p id="song-artist">
+                            VYBE Originals
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PLAYER CENTER -->
+
+                <div class="player-center">
+
+                    <!-- PROGRESS BAR -->
+
+                    <div class="progress-container">
+
+                        <span id="current-time">
+                            0:00
+                        </span>
+
+                        <input type="range" id="progress-bar" value="0" min="0" max="100">
+
+                        <span id="duration">
+                            0:00
+                        </span>
+
+                    </div>
+
+
+                    <!-- PLAYER CONTROLS -->
+
+                    <div class="player-controls">
+
+                        <button id="shuffle-button" title="Shuffle">
+                            <i class="fa-solid fa-shuffle"></i>
+                        </button>
+
+                        <button id="previous-button">
+                            ⏮
+                        </button>
+
+                        <button id="play-button" class="play-button">
+                            ▶
+                        </button>
+
+                        <button id="next-button">
+                            ⏭
+                        </button>
+
+                        <button id="loop-button" title="Loop">
+                            <i class="fa-solid fa-repeat"></i>
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- VOLUME -->
+
+                <div class="volume">
+
+                    <span class="volume-icon">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </span>
+
+                    <input type="range" id="volume-bar" min="0" max="1" step="0.01" value="1">
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="Script.js"></script>
+
+</body>
+
+</html>
